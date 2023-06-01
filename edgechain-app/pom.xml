@@ -130,6 +130,11 @@
                                    </excludes>
                                </filter>
                            </filters>
+                           <artifactSet>
+                               <excludes>
+                                   <exclude>org.apache.tomcat.embed:*</exclude>
+                               </excludes>
+                           </artifactSet>
                        </configuration>
                    </execution>
                </executions>
