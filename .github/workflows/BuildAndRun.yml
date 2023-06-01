@@ -21,7 +21,7 @@ jobs:
         run: mvn clean package -P gofly
 
       - name: Build edgechain-lib project
-        working-directory: ./edgechain-lib
+        working-directory: ./edgechain-library
         run: mvn clean package
 
       - name: Install edgechain-lib JAR to local repository
