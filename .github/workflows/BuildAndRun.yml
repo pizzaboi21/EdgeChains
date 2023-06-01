@@ -25,7 +25,7 @@ jobs:
         run: mvn clean package
 
       - name: Install edgechain-lib JAR to local repository
-        working-directory: ./edgechain-lib/target
+        working-directory: ./edgechain-library/target
         run: mvn install:install-file -Dfile=edgechain-lib-1.0.0.jar -DgroupId=com.flyspring -DartifactId=edgechain-lib -Dversion=1.0.0 -Dpackaging=jar
 
       - name: Build edgechain-app project
